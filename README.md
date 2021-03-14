@@ -69,7 +69,7 @@ npm install -g eslint eslint-plugin-standard eslint-plugin-promise eslint-config
 # 会进入安装插件的列表，一安装是从 github clone 的，完全取决于网速, 之后会自动编译 YCM, 编译失败的话需要手动编译, 有问题见 YCM 文档
 # 如果发现有插件安装失败 可以进入vim, 执行`:PlugInstall'
 
-cd k-vim/
+cd khsiufu-vim/
 sh -x install.sh
 ```
 
@@ -223,13 +223,13 @@ ctrl+n    相对/绝对行号切换
 更多细节优化:
     1. j/k 对于换行展示移动更友好
     2. HL 修改成 ^$, 更方便在同行移动
-    3. ; 修改成 : ，一键进入命令行模式，不需要按shift
-    4. 命令行模式 ctrl+a/e 到开始结尾
+    3. ; 修改成 : ，一键进入命令行模式，不需要按 shift
+    4. 命令行模式 ctrl + a / e 到开始结尾
     5. <和> 代码缩进后自动再次选中, 方便连续多次缩进, esc退出
     6. 对py文件，保存自动去行尾空白，打开自动加行首代码
-    7. 'w!!'强制保存, 即使readonly
+    7. 'w!!'强制保存，即使 readonly
     8. 去掉错误输入提示
-    9. 交换\`和', '能跳转到准确行列位置
+    9. 交换\`和','能跳转到准确行列位置
     10. python/ruby 等, 保存时自动去行尾空白
     11. 统一所有分屏打开的操作位 v/s[nerdtree/ctrlspace] (特殊ctrlp ctrl+v/x)
     12. ',zz' 代码折叠 toggle
@@ -246,7 +246,7 @@ ctrl+n    相对/绝对行号切换
 
 2. install.sh 参考`spf13-vim` 的`bootstrap.sh` [spf13-vim](https://github.com/spf13/spf13-vim)
 
-2. 插件管理使用[Vim-plug](https://github.com/junegunn/vim-plug)
+2. 插件管理使用 [Vim-plug](https://github.com/junegunn/vim-plug)
 
 3. 自动补全 [YCM](https://github.com/Valloric/YouCompleteMe)
 
