@@ -623,21 +623,10 @@ if has("gui_running")
 endif
 
 " theme主题
-if has("termguicolors")
-    " fix bug for vim
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set background=dark
+set t_Co=256
 
-    let &t_ZH="\e[3m"
-    let &t_ZR="\e[23m"
-
-    " enable true color
-    set termguicolors
-endif
-
-let g:material_terminal_italics = 1
-let g:material_theme_style = 'default'
-colorscheme material
+colorscheme solarized
 
 " 设置标记一列的背景颜色和数字一行颜色一致
 hi! link SignColumn   LineNr
