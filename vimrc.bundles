@@ -134,8 +134,8 @@ Plug 'vim-airline/vim-airline-themes'
 " 括号显示增强
 Plug 'kien/rainbow_parentheses.vim'
 
-" 主题 solarized
-Plug 'altercation/vim-colors-solarized'
+" 主题
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 " nav
 " nerdtree nerdtreetabs
