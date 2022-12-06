@@ -176,13 +176,23 @@ if count(g:bundle_groups, 'tmux')
 endif
 
 if count(g:bundle_groups, 'markdown')
-    Plug 'plasticboy/vim-markdown', {'for': 'md'}
+    " TODO: 无法使用，需要解决，暂时使用iamcco的插件
+    " Plug 'plasticboy/vim-markdown', {'for': 'md'}
     " https://github.com/suan/vim-instant-markdown
     " npm -g install instant-markdown-d
-    Plug 'suan/vim-instant-markdown'
-    let g:instant_markdown_slow = 1
-    let g:instant_markdown_autostart = 0
-    map <F12> :InstantMarkdownPreview<CR>
+    " Plug 'suan/vim-instant-markdown'
+    " let g:instant_markdown_slow = 1
+    " let g:instant_markdown_autostart = 0
+    " map <F12> :InstantMarkdownPreview<CR>
+
+    " https://github.com/iamcco/markdown-preview.vim/blob/master/README_cn.md
+    Plug 'iamcco/mathjax-support-for-mkdp'
+    Plug 'iamcco/markdown-preview.vim'
+    " 设置为 1 可以在打开 markdown 文件的时候自动打开浏览器预览，只在打开
+    let g:mkdp_auto_start = 0
+    let g:mkdp_path_to_chrome = "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome"
+    nmap <F12> :MarkdownPreview<CR>
+    imap <F12> :MarkdownPreview<CR>
 endif
 
 if count(g:bundle_groups, 'golang')
